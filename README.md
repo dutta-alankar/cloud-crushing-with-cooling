@@ -5,4 +5,7 @@ The file `cooltable.dat` has the cooling function we used in our simulations. We
 `X, Y, Z = 0.7154, 0.2703, 0.0143`
 
 Here's a list of what each program does
+
 `GOLi-compare.py`: Plots `Figure 1` from the paper. It compares the Gronke-Oh and Li criterion in terms of the run prameters of our simulations.
+
+`overlay.py`: Plots `Figure 2` from the paper. It superimposes our cloud crushing result on to that of Li et al. (their bottom panel of `Figure 3`)
