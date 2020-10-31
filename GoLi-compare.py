@@ -60,7 +60,7 @@ plt.subplots_adjust(left=0.11, bottom=0.24, right=0.90, top=0.90, wspace=0.025, 
     
 #Gronke Oh et. al.
 CS10 = ax1.contour(X1,X2,np.log10(Rgo),8,colors='w',linestyles='dotted')
-CS11 = ax1.pcolor(X1,X2,np.log10(Rgo),shading='auto')#,10)
+CS11 = ax1.pcolormesh(X1,X2,np.log10(Rgo),shading='auto')#,10)
 axins1 = inset_axes(ax1, width="100%", height="5%", loc='upper left', 
                     bbox_transform=ax1.transAxes, bbox_to_anchor=(0., 0.1, 1.0, 1.0),
                     borderpad=0)
@@ -76,7 +76,7 @@ ax1.tick_params(axis='both', which='minor', labelsize=15, direction="out", pad=3
 
 #Li et. al.
 CS10 = ax2.contour(X1,X2,np.log10(R_Li),5,colors='w',linestyles='dotted')
-CS11 = ax2.pcolor(X1,X2,np.log10(R_Li),shading='auto')#,10)
+CS11 = ax2.pcolormesh(X1,X2,np.log10(R_Li),shading='auto')#,10)
 axins2 = inset_axes(ax2, width="100%", height="5%", loc='upper left', 
                     bbox_transform=ax2.transAxes, bbox_to_anchor=(0., 0.1, 1.0, 1.0),
                     borderpad=0)
@@ -91,7 +91,7 @@ ax2.tick_params(axis='both', which='minor', labelsize=15, direction="out", pad=3
 
 #Ratio 
 CS10 = ax3.contour(X1,X2,np.log10(Rgo/R_Li),5,colors='w',linestyles='dotted')
-CS11 = ax3.pcolor(X1,X2,np.log10(Rgo/R_Li), shading='auto')
+CS11 = ax3.pcolormesh(X1,X2,np.log10(Rgo/R_Li), shading='auto')
 axins3 = inset_axes(ax3, width="100%", height="5%", loc='upper left', 
                     bbox_transform=ax3.transAxes, bbox_to_anchor=(0., 0.1, 1.0, 1.0),
                     borderpad=0)
